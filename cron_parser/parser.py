@@ -76,7 +76,6 @@ class BaseParser:
             raise ValueError(f'Unable to parse the {self.parser_type} element')
 
 
-
 class CronParser:
 
     def __init__(self, cron_string):
@@ -101,7 +100,6 @@ class CronParser:
         self.command = elements[5]
 
     def format_cron(self):
-        #import pdb; pdb.set_trace()
         return (
             f"{self.minute.output}\n"
             f"{self.hour.output}\n"
